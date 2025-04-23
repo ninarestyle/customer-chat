@@ -50,7 +50,7 @@ export default function Home() {
         <section className="container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 tracking-tight mb-6">
-              Make Revenue Cycle Management Insivisble To Doctors
+              Make Revenue Cycle Management Invisible To Doctors
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">
               Shorter DSO, Quicker Start, Lower Patient Abandonment
@@ -251,7 +251,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <span className="text-xl font-bold text-white block mb-4">Shunya</span>
-              <p className="text-gray-400 mt-2">Make Revenue Cycle Management Insivisble To Doctors</p>
+              <p className="text-gray-400 mt-2">Make Revenue Cycle Management Invisible To Doctors</p>
             </div>
             <div>
               <h3 className="font-medium text-lg mb-4">Solutions</h3>
