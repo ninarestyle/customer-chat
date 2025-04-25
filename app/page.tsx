@@ -53,7 +53,7 @@ export default function Home() {
               Make Revenue Cycle Management Invisible To Doctors
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">
-              Shorter DSO, Quicker Start, Lower Patient Abandonment
+              Higher collections, Reduced DSO, Faster time-to-therapy
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-md">
@@ -70,13 +70,7 @@ export default function Home() {
                 variant="outline"
                 className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg rounded-md"
               >
-                <a
-                  href="https://calendly.com/nina-liftai/explore-opportunities-with-shunya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Learn More
-                </a>
+                <a href="tel:6504578561">Get A Demo</a>
               </Button>
             </div>
           </div>
@@ -91,8 +85,8 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Powered by Autonomous AI Agents</h2>
               <p className="text-lg text-blue-100 max-w-3xl mx-auto">
-                Our platform is composed of specialized AI agents that work together to handle every aspect of the prior
-                authorization process.
+                Our platform is composed of specialized AI agents that work together to handle every aspect of the
+                billing process.
               </p>
             </div>
 
