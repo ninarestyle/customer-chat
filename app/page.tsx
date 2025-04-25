@@ -91,7 +91,7 @@ export default function Home() {
                   className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg rounded-md"
                 >
                   <a href="tel:6504578561" onClick={handleDemoClick}>
-                    Get A Demo
+                    Try AI Patient Intake
                   </a>
                 </Button>
                 {showPhoneTooltip && (
