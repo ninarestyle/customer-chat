@@ -1,8 +1,27 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { FileText, Shield, Workflow } from "lucide-react"
+import { useState } from "react"
 
 export default function Home() {
+  const [showPhoneTooltip, setShowPhoneTooltip] = useState(false)
+  const phoneNumber = "650-457-8561"
+
+  const handleDemoClick = (e) => {
+    // Check if it's likely a desktop device (this is a simple check, not foolproof)
+    const isDesktop = window.innerWidth >= 1024 && !("ontouchstart" in window)
+
+    if (isDesktop) {
+      e.preventDefault()
+      setShowPhoneTooltip(true)
+      // Hide the tooltip after 5 seconds
+      setTimeout(() => setShowPhoneTooltip(false), 5000)
+    }
+    // On mobile, the default behavior (making a call) will happen
+  }
+
   return (
     <div className="min-h-screen flex flex-col">
       <header className="container mx-auto py-6 px-4 flex justify-between items-center">
@@ -65,13 +84,24 @@ export default function Home() {
                   Get Started
                 </a>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg rounded-md"
-              >
-                <a href="tel:6504578561">Get A Demo</a>
-              </Button>
+              <div className="relative">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg rounded-md"
+                >
+                  <a href="tel:6504578561" onClick={handleDemoClick}>
+                    Get A Demo
+                  </a>
+                </Button>
+                {showPhoneTooltip && (
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white p-3 rounded-md shadow-lg border border-gray-200 z-10">
+                    <p className="text-gray-800 whitespace-nowrap">
+                      Call us at: <span className="font-bold">{phoneNumber}</span>
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </section>
