@@ -75,7 +75,7 @@ export default function TeamSlide() {
               </li>
               <li className="flex items-start">
                 <Linkedin className="h-5 w-5 text-blue-300 mr-2 flex-shrink-0 mt-0.5" />
-                <span>Founder of a Fashion Resale Marketplace</span>
+                <span>Builder of a Fashion Resale Marketplace</span>
               </li>
             </ul>
           </div>
